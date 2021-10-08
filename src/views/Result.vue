@@ -15,12 +15,7 @@
         </v-row>
         <v-row>
           <v-col>
-            <span
-              class="display-1"
-              v-bind:key="item"
-              v-for="item in command.description"
-              >{{ item }}</span
-            >
+            <span class="display-1" v-bind:key="item" v-for="item in command.description">{{ item }}</span>
           </v-col>
         </v-row>
         <v-spacer></v-spacer>
@@ -42,7 +37,26 @@ export default {
   props: ["cmd", "id"],
   data: function() {
     return {
-      loaded: false,
+      loaded: true,
+      command: {
+        "_id": "5c60f543a7314805dc237651",
+        "description": ["Apache 基准测试工具。执行负载测试的最简单工具。"],
+        "examples": [{
+          "command": "ab -n {{100}} {{url}}",
+          "description": "对给定的 URL 发送 100 个 HTTP GET 请求。"
+        }, {
+          "command": "ab -n {{100}} -c {{10}} {{url}}",
+          "description": "对给定的 URL 发送 100 个 HTTP GET 请求，最多同时发送 10 个请求。"
+        }, {
+          "command": "ab -k {{url}}",
+          "description": "激活 HTTP 中的 “ keepAlive ” 特性"
+        }, {
+          "command": "ab -t {{60}} {{url}}",
+          "description": "设置基准测试的最大秒数"
+        }],
+        "name": "ab",
+        "platform": "common"
+      }
     };
   },
   created: function() {

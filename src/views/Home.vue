@@ -4,7 +4,7 @@
 			<v-container class="fill-height" fluid>
         <v-row>
           <v-col>
-            <h1 style="min-height:100px;line-height: 100px" class="display-1 text-center">简单好用的 Linux 命令速查工具</h1>
+            <h1 style="min-height:100px;line-height: 100px" class="display-1 text-center">简单好用的 Term 命令速查工具</h1>
           </v-col>
         </v-row>
         <v-row>
@@ -25,7 +25,7 @@
         </v-row>
         <v-row>
           <v-col>
-            <h1 style="min-height:100px;line-height: 100px    font-size: 20px;" class="text-center">在微信中搜索「Linux」，也可以找到我们哦～</h1>
+            <h1 style="min-height:100px;line-height: 100px; font-size: 20px;" class="text-center">在微信中搜索「一个麻瓜的自我修养」，也可以找到我哦～</h1>
           </v-col>
         </v-row>
 				</v-container>
